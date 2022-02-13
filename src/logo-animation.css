@@ -1,0 +1,61 @@
+.logo-animate {
+    height: 90vh;
+}
+.logo-animate img.logo-img {
+    width: 100px;
+    animation: img-1 5s infinite alternate;
+    z-index: -1;
+}
+@keyframes img-1 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(300px);
+    }
+}
+
+.logo-animate img.img-2 {
+    animation-delay: 2s;
+}
+.logo-animate img.img-3 {
+    animation-delay: 4s;
+}
+.logo-animate img.img-4 {
+    animation-delay: 6s;
+}
+.logo-animate img.img-5 {
+    animation-delay: 8s;
+}
+.logo-animate img.img-6 {
+    animation-delay: 10s;
+}
+.logo-animate img.img-7 {
+    animation-delay: 12s;
+}
+.logo-animate img.img-8 {
+    animation-delay: 14s;
+}
+
+
+@media (max-width: 768px) {
+    .logo-animate {
+        height: 100vh;
+    }
+    .img-animation {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-animate img.logo-img {
+        width: 80px;
+    }
+    @keyframes img-1 {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(200%);
+        }
+    }
+
+}

@@ -1,0 +1,137 @@
+/* this is the place that I styled all my search box */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+form {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(231, 231, 255);
+    border-radius: 90px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset;
+    display: flex;
+    align-items: center;
+}
+form label {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+form input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    border: none;
+    background: transparent;
+    font-size: 1.3em;
+    outline: none;
+    transition: animation .3s ease-in-out;
+}
+form #img {
+    width: 50%;
+    transition: .1s ease-in-out;
+}
+form:active #img {
+    width: 80%;
+}
+form #img-2 {
+    width: 40%;
+    transition: .1s ease-in-out;
+}
+form:active #img-2 {
+    width: 60%;
+}
+form:focus-within {
+    animation: search 2s infinite alternate;
+}
+@keyframes search {
+    from { 
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 0 0 0px black;
+    }
+    to {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, -5px -5px 0px #DB4437, -5px 5px 0px #F4B400, 5px 5px 0px #0F9D58, 5px -5px 0px #4285F4;
+    }
+}
+
+#youtube:focus-within {
+    animation: youtube 2s infinite alternate;
+}
+@keyframes youtube {
+    from { 
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 0 0 0px black;
+    }
+    to {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 0 0 20px #FF0000;
+    }
+}
+#twitter:focus-within {
+    animation: twitter 2s infinite alternate;
+}
+@keyframes twitter {
+    from { 
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 0 0 0px black;
+    }
+    to {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 0 0 20px #00acee;
+    }
+}
+#facebook:focus-within {
+    animation: facebook 2s infinite alternate;
+}
+@keyframes facebook {
+    from { 
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 0 0 0px black;
+    }
+    to {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 0 0 20px #4267B2;
+    }
+}
+#tictok:focus-within {
+    animation: tictok 2s infinite alternate;
+}
+@keyframes tictok {
+    from { 
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 0 0 0px black;
+    }
+    to {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 5px 5px 0px #FE2C55, -5px -5px 0px #25F4EE;
+    }
+}
+#pinterest:focus-within {
+    animation: pinterest 2s infinite alternate;
+}
+@keyframes pinterest {
+    from { 
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 0 0 0px black;
+    }
+    to {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 0 0 20px #E60023;
+    }
+}
+#twitch:focus-within {
+    animation: twitch 2s infinite alternate;
+}
+@keyframes twitch {
+    from { 
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 0 0 0px black;
+    }
+    to {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, -3px 3px 0px black, -7px 7px 0px #6441a5;
+    }
+}
+#playStore:focus-within {
+    animation: playStore 2s infinite alternate;
+}
+@keyframes playStore {
+    from { 
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, 0 0 0px black;
+    }
+    to {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.274) inset, -4px -4px 20px rgb(255, 255, 255) inset, -5px -5px 0px #3BCCFF, -5px 5px 0px #FF3333, 5px 5px 0px #FFD400, 5px -5px 0px #48FF48;
+    }
+}
